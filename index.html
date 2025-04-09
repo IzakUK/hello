@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Izak F</title>
+  <link rel="stylesheet" href="load.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<link rel="stylesheet" href="load.css"></script>
+<body>
+  <!-- Intr -->
+  <div id="begin-screen">
+    <button class="begin-button" id="begin-button">Begin</button>
+  </div>
+
+  <div class="circle-container">
+    <div class="circle circle-responsive" style="animation-delay: 0s;"></div>
+    <div class="circle circle-responsive" style="animation-delay: 0.5s;"></div>
+    <div class="circle circle-responsive" style="animation-delay: 1s;"></div>
+  </div>
+  
+  <!-- Main -->
+  <div class="container" id="loading-screen">
+    <div class="message" id="main-message">Hello World</div>
+    
+    <div class="dots-container-responsive" id="dots-container"></div>
+  </div>
+  
+  <!-- Instr -->
+  <div class="instructions" id="instructions-screen">
+    <div class="instruction-content">
+      <h2 class="instruction-title">Welcome</h2>
+      <p class="instruction-text">Here's how to navigate my site:</p>
+      <div class="device-instructions" id="device-specific-instructions">
+      </div>
+      
+      <div class="progress-bar" id="progress-bar">
+        <div class="progress-line" id="progress-line"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="overlay" id="transition-overlay"></div>
+  
+  <!-- Audio-->
+  <audio id="background-audio" loop>
+    <source src="loader.mp3" type="audio/mp3"> <!-- Self-made -->
+  </audio>
+<script src="load.js"></script>
+</body>
+</html>
